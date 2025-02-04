@@ -7,9 +7,10 @@
 </head>
 <body>
     <div class="kneeContainer">
-        <img id="image1" src="https://cdn-useast1.kapwing.com/static/templates/knee-surgery-tomorrow-meme-template-KAI3QQ5SCkNXSKMs-full.jpg">
+        <img id="image1" src="https://media1.tenor.com/m/nAz6CdirzrwAAAAd/knee-surgery-meme.gif">
         <button onclick="kneeGrow()">Click to grow trees or knees!!!</button>
-        <img src="https://hips.hearstapps.com/runnersworld-uk/i/15719/inner-knee-pain.jpg?crop=0.767xw:1.00xh;0.207xw,0&resize=640:*">
+        <button onclick="rouletteButton()">Klik om te rouletten!!!</button>
+        <img id="image2" src="https://media1.tenor.com/m/aab1ZTA6hrMAAAAd/knee-articulate-joint.gif">
     </div>
     
 </body>
@@ -19,6 +20,9 @@
     }
     #image1 {
         max-height: 200px;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 20px;
     }
     .kneeContainer {
@@ -39,6 +43,30 @@
 <script>
     function kneeGrow() {
         window.location.href = "https://www.youtube.com/watch?v=YXJUAjH1fU4";
+    }
+
+    function rouletteButton() {
+        let number = Math.floor(Math.random() * 5)
+        
+        switch (number) {
+            case 0:
+                window.location.href = "https://www.youtube.com/watch?v=EziDme-JCyQ"
+                break;
+            case 1:
+                window.location.href = "https://www.pornhub.com/gay"
+                break;
+            case 2:
+                window.location.href = "https://www.mayoclinic.org/appointments"
+                break;
+            case 3:
+                window.alert("je kanker moeder")
+                break;
+            case 4:
+                
+                break;
+            default:
+                break;
+        }
     }
 </script>
 </html>
