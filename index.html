@@ -11,7 +11,7 @@
         <div style="display: flex; flex-direction: row;">
             <button onclick="kneeGrow()">Click to grow trees or knees!!!</button>
             <button onclick="rouletteButton()" style="background-color: green;">Klik om te rouletten!!!</button>
-            <button onclick="popupButton()" style="background-color: blue;">Verassing!</button>
+            <button id="myBtn" onclick="popupButton()" style="background-color: blue;">Verassing!</button>
             <button onclick="rouletteButton()" style="background-color: orange;">Klik om te rouletten!!!</button>
         </div>
         <img id="image2" src="https://media1.tenor.com/m/aab1ZTA6hrMAAAAd/knee-articulate-joint.gif">
@@ -20,8 +20,25 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+            <span class="close">&times;</span>
+            <form action="https://formspree.io/f/xovjwgda" method="POST">
+                <div style="display: flex; flex-direction: column;">
+                    <div>
+                        <label>
+                            jou email:
+                            <input type="email" name="email">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            jou kniegroeioperatie:
+                            <textarea name="message"></textarea>
+                        </label>
+                    </div>                    
+                </div>                
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
         </div>
       
     </div>
