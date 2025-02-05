@@ -3,189 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=	, initial-scale=1.0">
-    <title>kniegroeioperatie is leven!!!!!</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="scripts/script.js"></script>
+    <title>Rouletteren is leven!!!!!</title>
 </head>
-<body>
-    <div class="kneeContainer">
-        <div style="display: flex; flex-direction: row; background-color: black;">
-            <button onclick="kneeGrow()">Click to grow trees or knees!!!</button>
-            <button onclick="rouletteButton()" style="background-color: green;">Klik om te rouletten!!!</button>
-            <button id="myBtn" onclick="popupButton()" style="background-color: blue;">Schrijf je nu in voor kniegroeioperatie!</button>
-            <button onclick="rouletteButton()" style="background-color: orange;">Klik om te rouletten!!!</button>
+    <body>
+        <h1>
+            Jordy's super coole rat van fortuyn
+        </h1>
+        <div class="ratContainer">
+            <p class="rat">
+                dsadsa
+            </p>
+            <button onclick="onWheelSpin()">
+                spin me daddy
+            </button>
         </div>
-        <img id="image1" src="https://media1.tenor.com/m/nAz6CdirzrwAAAAd/knee-surgery-meme.gif" style="margin-top: 20px;">
-        
-        <div style="display: flex; flex-direction: row; margin-left: auto; margin-right: auto;">
-            <img id="image2" src="https://media1.tenor.com/m/aab1ZTA6hrMAAAAd/knee-articulate-joint.gif">
-            <img id="image3" src="https://media4.giphy.com/media/p0ydOvZ6xm8PMe5qlr/giphy.gif?cid=6c09b952v75muafynacrpv6bytoifx82q3mc1fy9th17ji9m&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">    
-            <div>
-                <img src="aprillia.jpg" style="width: 100%;">
-                <h1>
-                    R.I.P. Aprillia RS50
-                </h1>
-                <p>
-                    1x dijk overleefd maar niet politie tiel overleefd :(
-                </p>
-                <p>
-                    Nu heeft job verneukte zip en peugeot soon maar gaat sparen voor Moestang
-                </p>
-            </div>
-        </div>
-        <div style="margin-top: 20px; margin-bottom: 20px; width: 100%; text-align: center;">
-            <h2>
-                "kopkaas" - Bram Jansen 2025
-            </h2>
-        </div>
-        <div>
-            <img src="https://i.ytimg.com/vi/-m0HKJ3WQHg/sddefault.jpg">
-        </div>
-    </div>
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form action="https://formspree.io/f/xovjwgda" method="POST">
-                <div style="display: flex; flex-direction: column;">
-                    <div>
-                        <label>
-                            jou email:
-                            <input type="email" name="email">
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            jou kniegroeioperatie:
-                            <textarea name="message"></textarea>
-                        </label>
-                    </div>                    
-                </div>                
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-        </div>
-      
-    </div>
-</body>
-<style>
-    body {
-        margin: 0;
-    }
-    #image1 {
-        max-height: 200px;
-        width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-    .kneeContainer {
-        display: flex;
-        flex-direction: column;
-    }
-    button {
-        background-color: red;
-        color: white;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        height: 100px;
-        width: 200px;
-    }
-
-    /* The Modal (background) */
-    .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    }
-
-    /* The Close Button */
-    .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    }
-</style>
-<script>
-    function kneeGrow() {
-        window.location.href = "https://www.youtube.com/watch?v=YXJUAjH1fU4";
-    }
-
-    function rouletteButton() {
-        let number = Math.floor(Math.random() * 5)
-        
-        switch (number) {
-            case 0:
-                window.location.href = "https://www.youtube.com/watch?v=EziDme-JCyQ"
-                break;
-            case 1:
-                window.location.href = "https://www.pornhub.com/gay"
-                break;
-            case 2:
-                window.location.href = "https://www.mayoclinic.org/appointments"
-                break;
-            case 3:
-                window.alert("je moeder")
-                break;
-            case 4:
-                window.location.href = "https://www.instagram.com/p/DEtHIDfoU44/";
-                break;
-            default:
-                break;
-        }
-    }
-
-    function popupButton() {
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-        modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-        }
-
-    }
-</script>
+    </body>
 </html>

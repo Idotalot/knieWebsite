@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.ratContainer {
+    height: 100px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.rat {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.purple {
+    color: purple;
+}
